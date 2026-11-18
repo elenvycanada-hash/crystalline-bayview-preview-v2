@@ -8,7 +8,7 @@
 @keyframes sweep{0%,55%{transform:translateX(-140%) skewX(-18deg)}85%,100%{transform:translateX(260%) skewX(-18deg)}}
 
 /* scroll progress */
-.ice-progress{position:fixed;left:0;top:0;height:3px;width:100%;z-index:100;pointer-events:none;transform-origin:0 50%;transform:scaleX(var(--sp,0));background:linear-gradient(90deg,#007C8B,#009FB3,#72CAD5)}
+.ice-progress{position:fixed;left:0;top:0;height:3px;width:100%;z-index:100;pointer-events:none;transform-origin:0 50%;transform:scaleX(var(--sp,0));background:linear-gradient(90deg,#008C9E,#00AFC1,#73DCE5)}
 
 /* logo: gentle float + specular shine masked to the logo pixels (shape unchanged) */
 .brand{position:relative}
@@ -22,7 +22,7 @@
 
 /* heading shimmer: same colour, a light band glides across */
 .hero h1 em .w,.section-head h2,.split-copy h2,.request-copy h2,.cta h2,.faq-intro h2,.stat-num{
-  background-image:linear-gradient(100deg,currentColor 42%,#72CAD5 50%,currentColor 58%);background-size:250% 100%;
+  background-image:linear-gradient(100deg,currentColor 42%,#73DCE5 50%,currentColor 58%);background-size:250% 100%;
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sheenText 7s ease-in-out infinite}
 .section-dark .section-head h2,.section-dark .faq-intro h2{-webkit-text-fill-color:transparent!important}
 .stat-card:nth-child(2) .stat-num{animation-delay:-2s}.stat-card:nth-child(3) .stat-num{animation-delay:-4s}
@@ -39,7 +39,7 @@
 .hero-card{transform:rotateY(var(--ry,0deg)) rotateX(var(--rx,0deg));transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .crystals{position:absolute;inset:0;pointer-events:none;z-index:2;transition:transform .4s ease-out}
 .crystals span{position:absolute}
-.crystals svg{display:block;opacity:.85;filter:drop-shadow(0 10px 18px rgba(0,124,139,.25));animation:floaty var(--d,8s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+.crystals svg{display:block;opacity:.85;filter:drop-shadow(0 10px 18px rgba(0,140,158,.25));animation:floaty var(--d,8s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
 @keyframes floaty{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(-16px) rotate(var(--r,8deg))}}
 
 /* glass sheen overlays on existing cards (colours untouched) */
@@ -57,11 +57,11 @@
 
 /* testimonial ticker: auto-cycling spotlight on the existing review cards */
 .review-card{transition:transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .6s}
-.review-card.spot{transform:translateY(-6px);box-shadow:0 24px 50px rgba(0,124,139,.18),0 0 0 2px rgba(0,159,179,.35)}
+.review-card.spot{transform:translateY(-6px);box-shadow:0 24px 50px rgba(0,140,158,.18),0 0 0 2px rgba(0,175,193,.35)}
 .review-card.spot>.sweep::before{transform:translateX(360%) skewX(-18deg)}
 
 /* smart guide: AI "thinking" state + auto-demo pulse */
-.guide-kicker::before{content:"";display:inline-block;width:9px;height:9px;margin-right:8px;border-radius:50%;vertical-align:middle;background:conic-gradient(from var(--ang),#009FB3,#fff,#72CAD5,#009FB3);animation:spinAng 2.5s linear infinite;box-shadow:0 0 8px rgba(0,159,179,.6)}
+.guide-kicker::before{content:"";display:inline-block;width:9px;height:9px;margin-right:8px;border-radius:50%;vertical-align:middle;background:conic-gradient(from var(--ang),#00AFC1,#fff,#73DCE5,#00AFC1);animation:spinAng 2.5s linear infinite;box-shadow:0 0 8px rgba(0,175,193,.6)}
 #guide-result-copy,#guide-result-title{transition:opacity .25s}
 .guide-result.thinking #guide-result-copy,.guide-result.thinking #guide-result-title{opacity:.25}
 .guide-result.thinking small::after{content:" · thinking…";animation:blink 1s steps(2) infinite}
@@ -75,10 +75,10 @@
 .sticky-cta.show{opacity:1;transform:none;pointer-events:auto}
 .sticky-cta .btn{min-height:46px}
 .sticky-cta .ai{width:46px;padding:0;position:relative}
-.sticky-cta .ai::before{content:"";position:absolute;inset:-3px;border-radius:50%;border:1px solid rgba(0,159,179,.5);animation:pulse 2.4s ease-out infinite}
+.sticky-cta .ai::before{content:"";position:absolute;inset:-3px;border-radius:50%;border:1px solid rgba(0,175,193,.5);animation:pulse 2.4s ease-out infinite}
 @keyframes pulse{0%{transform:scale(.9);opacity:1}100%{transform:scale(1.35);opacity:0}}
 .btn-primary.breathe{animation:breathe 3.5s ease-in-out infinite}
-@keyframes breathe{50%{box-shadow:0 14px 30px rgba(0,159,179,.38),0 0 0 6px rgba(0,159,179,.12)}}
+@keyframes breathe{50%{box-shadow:0 14px 30px rgba(0,175,193,.38),0 0 0 6px rgba(0,175,193,.12)}}
 
 /* scroll reveal (only when JS is running and motion allowed) */
 html.gx .reveal{opacity:0;transform:translateY(26px);transition:opacity .85s cubic-bezier(.2,.8,.2,1),transform .85s cubic-bezier(.2,.8,.2,1)}
